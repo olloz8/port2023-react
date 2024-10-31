@@ -1,11 +1,14 @@
 import React from "react";
-import about from "../as/about.jpg";
+import about from "../assets/img/about.jpg";
+import { introText } from '../constants';
 
 const Intro = () => {
     return (
         <section id="intro">
             <div className="intro__inner">
-                <h1 className="intro__title">{introText.title}</h1>
+                <h2 className="intro__title">
+                    {introText.title}
+                </h2>
                 <div className="intro__lines" aria-hidden="true">
                     <span className="line"></span>
                     <span className="line"></span>
@@ -36,7 +39,7 @@ const Intro = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default Intro;
