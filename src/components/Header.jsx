@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import { headerNav } from "../constants";
+import '../assets/scss/style.scss';
 
 const Header = () => {
     const [show, setShow] = useState(false);
